@@ -633,16 +633,35 @@ public static async Task<HttpResponseData> HttpStart(
 ```
 
 # [JavaScript](#tab/javascript)
+```javascript
+const HttpStart: HttpHandler = async (request: HttpRequest, context: InvocationContext): Promise<HttpResponse> => {
+    const client = df.getClient(context);
+    const instanceId = await client.startNew("ProcessOrderOrchestrator", {
+        input: orderId,
+        version: "1.0"
+    });
 
-Starting an orchestration with a specific version different from the current `defaultVersion` specified in your `host.json` is currently not supported in JavaScript.
+    // ...
+};
+```
 
 # [Python](#tab/python)
+```python
+async def http_start(req: func.HttpRequest, client):
+    client = df.DurableOrchestrationClient(starter)
+    instance_id = await client.start_new("ProcessOrderOrchestrator", client_input=order_id, version="1.0")
 
-Starting an orchestration with a specific version different from the current `defaultVersion` specified in your `host.json` is currently not supported in Python.
+    # ...
+```
 
 # [PowerShell](#tab/powershell)
+```powershell
+param($Request, $TriggerMetadata)
 
-Starting an orchestration with a specific version different from the current `defaultVersion` specified in your `host.json` is currently not supported in PowerShell.
+$instanceId = Start-DurableOrchestration -FunctionName "ProcessOrderOrchestrator" -Input $orderId -Version "1.0"
+
+# ...
+```
 
 # [Java](#tab/java)
 
@@ -688,16 +707,39 @@ public static async Task<string> RunMainOrchestrator(
 ```
 
 # [JavaScript](#tab/javascript)
+```javascript
+const RunMainOrchestrator: OrchestrationHandler = function* (context: OrchestrationContext) {
+    const paymentResult = yield context.df.callSubOrchestrator(
+        "ProcessPaymentOrchestrator",
+        orderId,
+        { version: "1.0" }
+    );
 
-Starting a sub-orchestration with a specific version different from the current `defaultVersion` specified in your `host.json` is currently not supported in JavaScript.
+    // ...
+};
+```
 
 # [Python](#tab/python)
+```python
+@myApp.orchestration_trigger(context_name="context")
+def run_main_orchestrator(context: df.DurableOrchestrationContext):
+    payment_result = yield context.call_sub_orchestrator(
+        "ProcessPaymentOrchestrator",
+        order_id,
+        version="1.0"
+    )
 
-Starting a sub-orchestration with a specific version different from the current `defaultVersion` specified in your `host.json` is currently not supported in Python.
+    # ...
+```
 
 # [PowerShell](#tab/powershell)
+```powershell
+param($Context)
 
-Starting a sub-orchestration with a specific version different from the current `defaultVersion` specified in your `host.json` is currently not supported in PowerShell.
+$paymentResult = Invoke-SubOrchestrator -FunctionName "ProcessPaymentOrchestrator" -Input $orderId -Version "1.0"
+
+# ...
+```
 
 # [Java](#tab/java)
 
