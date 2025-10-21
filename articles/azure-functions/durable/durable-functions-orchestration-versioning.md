@@ -647,8 +647,9 @@ const HttpStart: HttpHandler = async (request: HttpRequest, context: InvocationC
 
 # [Python](#tab/python)
 ```python
+@myApp.route(route="orchestrators/{functionName}")  
+@myApp.durable_client_input(client_name="client")  
 async def http_start(req: func.HttpRequest, client):
-    client = df.DurableOrchestrationClient(starter)
     instance_id = await client.start_new("ProcessOrderOrchestrator", client_input=order_id, version="1.0")
 
     # ...
