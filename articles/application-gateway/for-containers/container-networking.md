@@ -5,7 +5,7 @@ services: application gateway
 author: mbender-ms
 ms.service: azure-appgw-for-containers
 ms.topic: concept-article
-ms.date: 8/26/2025
+ms.date: 08/26/2025
 ms.author: mbender
 # Customer intent: "As a Kubernetes administrator, I want to configure and deploy Application Gateway for Containers with different CNI plugins, so that I can manage networking efficiently and ensure seamless connectivity between pods in my Azure Kubernetes Service cluster."
 ---
@@ -78,6 +78,7 @@ A: Yes, however, installation of Application Gateway for Containers on a cluster
 
 ## Next steps
 
-* [Deploy ALB Controller](quickstart-deploy-application-gateway-for-containers-alb-controller.md?tabs=install-helm-windows)
+* [Deploy ALB Controller - Add-on](quickstart-deploy-application-gateway-for-containers-alb-controller-addon.md)
+* [Deploy ALB Controller - Helm](quickstart-deploy-application-gateway-for-containers-alb-controller-helm.md)
 * [Application Gateway for Containers components](application-gateway-for-containers-components.md)
 * [Upgrade AKS to CNI Overlay](/azure/aks/upgrade-aks-ipam-and-dataplane#upgrade-an-existing-cluster-to-azure-cni-overlay)

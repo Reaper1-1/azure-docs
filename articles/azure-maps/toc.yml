@@ -42,8 +42,6 @@ items:
     href: geographic-scope.md
   - name: Consent management
     href: consent-management.md
-  - name: Encryption of data at rest
-    href: ../security/fundamentals/encryption-atrest.md
   - name: Azure Services that support managed identities
     href: ../active-directory/managed-identities-azure-resources/managed-identities-status.md
   - name: Coverage
@@ -297,8 +295,8 @@ items:
       href: power-bi-visual-geocode.md
     - name: Understanding layers
       href: power-bi-visual-understanding-layers.md
-    - name: Add a bubble layer
-      href: power-bi-visual-add-bubble-layer.md
+    - name: Add a marker layer
+      href: power-bi-visual-add-marker-layer.md
     - name: Add a cluster bubble layer
       href: power-bi-visual-cluster-bubbles.md
     - name: Add a pie chart layer

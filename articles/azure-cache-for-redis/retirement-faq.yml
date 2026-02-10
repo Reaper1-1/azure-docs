@@ -86,9 +86,7 @@ sections:
         answer: | 
           Azure Managed Redis supports all Redis functionality offered in existing Azure Cache for Redis SKUs. 
           
-          Some management regions, SKU sizes, and operations aren't yet available. 
-
-          For more details about the retirement of any of the tiers Azure Cache for Redis, see [Azure Cache for Redis Retirement: What to Know and How to Prepare](https://techcommunity.microsoft.com/blog/azure-managed-redis/azure-cache-for-redis-retirement-what-to-know-and-how-to-prepare/4458721).
+          Some management operations, regions and SKU sizes aren't yet available. For more details, see [Azure Cache for Redis Retirement: What to Know and How to Prepare](https://techcommunity.microsoft.com/blog/azure-managed-redis/azure-cache-for-redis-retirement-what-to-know-and-how-to-prepare/4458721).
 
           If you want to migrate to Azure Managed Redis immediately, but you can't because of any missing feature, reach out to support.
 
@@ -107,7 +105,7 @@ sections:
       - question: Can I transfer my reservations or reserved pricing from Azure Cache for Redis to Azure Managed Redis?
 
         answer: | 
-          You can cancel or exchange your existing reservation. For more information, see [Cancel, exchange, and refund policies](/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations).
+          Your existing reservations will be supported until September 30, 2028. However, you can cancel or exchange your existing reservation earlier than that date. For more information, see [Cancel, exchange, and refund policies](/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations).
   
   - name: Questions on the Enterprise tier of Azure Cache for Redis retirement
     
@@ -165,9 +163,9 @@ sections:
       - question: Does Azure Managed Redis support every feature that I currently use?
 
         answer: |
-          Azure Managed Redis supports all Redis functionality offered in existing Redis Enterprise SKUs. Some SKU sizes aren't available yet.
+          Azure Managed Redis supports all Redis functionality offered in existing Redis Enterprise SKUs.
           
-          For more details about the retirement of any of the tiers Azure Cache for Redis, see [Azure Cache for Redis Retirement: What to Know and How to Prepare](https://techcommunity.microsoft.com/blog/azure-managed-redis/azure-cache-for-redis-retirement-what-to-know-and-how-to-prepare/4458721).
+          Some management operations, regions and SKU sizes aren't yet available. For more details, see [Azure Cache for Redis Retirement: What to Know and How to Prepare](https://techcommunity.microsoft.com/blog/azure-managed-redis/azure-cache-for-redis-retirement-what-to-know-and-how-to-prepare/4458721).
 
           If you want to migrate to Azure Managed Redis immediately, but you can't because of any missing feature, reach out to support.
 
@@ -186,4 +184,4 @@ sections:
       - question: Can I transfer my reservations or reserved pricing from Azure Cache for Redis to Azure Managed Redis?
 
         answer: |
-            You can cancel or exchange your existing reservation. For more information, see [Cancel, exchange, and refund policies](/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations).
+            Your existing reservations will be supported until March 30, 2027. However, you can cancel or exchange your existing reservation earlier than that date. You can cancel or exchange your existing reservation. For more information, see [Cancel, exchange, and refund policies](/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations).

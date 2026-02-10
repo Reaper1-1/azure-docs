@@ -1,9 +1,6 @@
 ---
 title: High availability for Azure Cache for Redis
 description: Learn about Azure Cache for Redis high availability features and options
-
-
-
 ms.topic: conceptual
 ms.date: 08/05/2024
 appliesto:
@@ -12,6 +9,8 @@ appliesto:
 ms.custom: references_regions
 ---
 # High availability and disaster recovery
+
+[!INCLUDE [cache-retirement-alert](includes/cache-retirement-alert.md)]
 
 As with any cloud systems, unplanned outages can occur that result in a virtual machines (VM) instance, an Availability Zone, or a complete Azure region going down. We recommend customers have a plan in place to handle zone or regional outages.
 
@@ -67,7 +66,7 @@ Applicable tiers: **Standard**, **Premium**, **Enterprise**, **Enterprise Flash*
 
 Recommended for: **High availability**, **Disaster recovery - intra region**
 
-Azure Cache for Redis supports zone redundant configurations in the Standard, Premium, and Enterprise tiers. A [zone redundant cache](cache-how-to-zone-redundancy.md) can place its nodes across different [Azure Availability Zones](../reliability/availability-zones-overview.md) in the same region. It eliminates data center or Availability Zone outage as a single point of failure and increases the overall availability of your cache.
+Azure Cache for Redis supports zone redundant configurations in the Standard, Premium, and Enterprise tiers. A [zone redundant cache](cache-how-to-zone-redundancy.md) can place its nodes across different [Azure Availability Zones](/azure/reliability/availability-zones-overview) in the same region. It eliminates data center or Availability Zone outage as a single point of failure and increases the overall availability of your cache.
 
 If a cache is configured to use two or more zones as described earlier in the article, the cache nodes are created in different zones. When a zone goes down, cache nodes in other zones are available to keep the cache functioning as usual.
 
