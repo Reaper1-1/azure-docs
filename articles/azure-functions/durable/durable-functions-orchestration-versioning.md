@@ -59,23 +59,23 @@ See the [extension bundle configuration documentation](../extension-bundles.md) 
 
 # [C#](#tab/csharp)
 
-Use `Microsoft.Azure.Functions.Worker.Extensions.DurableTask` version [1.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.5.0) or later.
+Use `Microsoft.Azure.Functions.Worker.Extensions.DurableTask` version [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.14.0) or later.
 
 # [JavaScript](#tab/javascript)
 
-Use `durable-functions` version [3.2.0](https://www.npmjs.com/package/durable-functions/v/3.2.0) or later.
+Use `durable-functions` version [3.3.0](https://www.npmjs.com/package/durable-functions/v/3.3.0) or later.
 
 # [Python](#tab/python)
 
-Use `azure-functions-durable` version [1.3.3](https://pypi.org/project/azure-functions-durable/1.3.3/) or later.
+Use `azure-functions-durable` version [1.5.0](https://pypi.org/project/azure-functions-durable/1.5.0/) or later.
 
 # [PowerShell](#tab/powershell)
 
-Use `AzureFunctions.PowerShell.Durable.SDK` version [2.0.0](https://www.powershellgallery.com/packages/AzureFunctions.PowerShell.Durable.SDK/2.0.0) or later. Make sure you're using the standalone [Durable Functions PowerShell SDK](durable-functions-powershell-v2-sdk-migration-guide.md).
+Use `AzureFunctions.PowerShell.Durable.SDK` version [2.2.0](https://www.powershellgallery.com/packages/AzureFunctions.PowerShell.Durable.SDK/2.2.0) or later. Make sure you're using the standalone [Durable Functions PowerShell SDK](durable-functions-powershell-v2-sdk-migration-guide.md).
 
 # [Java](#tab/java)
 
-Use `durabletask-azure-functions` version [1.6.1](https://mvnrepository.com/artifact/com.microsoft/durabletask-azure-functions/1.6.1) or later.
+Use `durabletask-azure-functions` version [1.6.3](https://mvnrepository.com/artifact/com.microsoft/durabletask-azure-functions/1.6.3) or later.
 
 ---
 
