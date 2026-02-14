@@ -1121,10 +1121,10 @@ Azure Functions lets you define the threshold level to be used when tracking and
 By default, Azure Functions writes output as traces to Application Insights. For more control, you can instead use the [Application Insights Node.js SDK](https://github.com/microsoft/applicationinsights-node.js) to send custom logs, metrics, and dependencies to your Application Insights instance.
 
 > [!NOTE]
-> Some methods in the Application Insights Node.js SDK have changed over time and might have minor syntax differences from the examples shown here. For the latest API usage, see the [Application Insights Node.js SDK documentation](https://github.com/microsoft/applicationinsights-node.js).
+> Methods in the Application Insights Node.js SDK might change over time and there could be minor syntax differences from the examples shown here. For the latest API usage examples, see the [Application Insights Node.js SDK documentation](https://github.com/microsoft/applicationinsights-node.js).
 
 ::: zone pivot="nodejs-model-v4"  
-For distributed tracing in the Node.js v4 programming model, use the [`@azure/functions-opentelemetry-instrumentation`](https://www.npmjs.com/package/@azure/functions-opentelemetry-instrumentation) package instead of the Application Insights SDK. This package provides OpenTelemetry-based automatic instrumentation for Azure Functions. For more information, see the [OpenTelemetry Azure Functions Instrumentation for Node.js](https://github.com/Azure/azure-functions-nodejs-opentelemetry) GitHub repository.  
+For distributed tracing in the Node.js v4 programming model, you can use the [`@azure/functions-opentelemetry-instrumentation`](https://www.npmjs.com/package/@azure/functions-opentelemetry-instrumentation) package instead of the Application Insights SDK. This package provides OpenTelemetry-based automatic instrumentation for Azure Functions. For more information, see the [OpenTelemetry Azure Functions Instrumentation for Node.js](https://github.com/Azure/azure-functions-nodejs-opentelemetry) GitHub repository.  
 ::: zone-end
 
 # [JavaScript](#tab/javascript)
