@@ -57,6 +57,8 @@ If you're using a non-.NET language (JavaScript, Python, PowerShell, or Java) wi
 
 See the [extension bundle configuration documentation](../extension-bundles.md) for details on choosing and updating bundle versions.
 
+In addition to the extension bundle requirement for non-.NET languages, you also need to use the minimum version of the language-specific SDK package listed below. Both the extension bundle and the SDK package are required for orchestration versioning to work correctly.
+
 # [C#](#tab/csharp)
 
 Use `Microsoft.Azure.Functions.Worker.Extensions.DurableTask` version [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.14.0) or later.
