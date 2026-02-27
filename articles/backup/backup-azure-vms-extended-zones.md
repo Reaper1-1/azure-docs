@@ -66,7 +66,7 @@ To create a scheduled daily backup to a Recovery Services vault, follow these st
    :::image type="content" source="./media/backup-azure-arm-vms-prepare/select-vms-to-backup.png" alt-text="Screenshot that shows the Select virtual machines pane." lightbox="./media/backup-azure-arm-vms-prepare/select-vms-to-backup.png":::
 
    
-   You can configure backup for all VMs in the same region and subscription as the vault.
+   You can configure backup for all VMs in the same region as the vault.
 
 ## Enable backup on a VM
 

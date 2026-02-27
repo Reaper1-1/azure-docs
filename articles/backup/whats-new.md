@@ -18,9 +18,11 @@ Azure Backup is constantly improving and releasing new features that enhance the
 You can learn more about the new releases by bookmarking this page or by [subscribing to updates here](https://azure.microsoft.com/updates/?query=backup).
 
 ## Updates summary
-
+- March 2026
+  - [Cross-subscription backup support for Azure VMs (preview)](#cross-subscription-backup-support-for-azure-vms-preview)
 - January 2026
   - [Backup support for Confidential VMs (preview)](#backup-support-for-confidential-vms-preview)
+  - [Cross-subscription backup support for Azure VMs (preview)](#cross-subscription-backup-support-for-azure-vms-preview)
 - November 2025
   - [Threat detection in Azure Backup with Microsoft Defender for Cloud integration (preview)](#threat-detection-in-azure-backup-with-microsoft-defender-for-cloud-integration-preview)
   - [Vaulted backup support for Azure Data Lake storage is now generally available](#vaulted-backup-support-for-azure-data-lake-storage-is-now-generally-available)
@@ -63,6 +65,11 @@ You can learn more about the new releases by bookmarking this page or by [subscr
 - January 2024
   - [Cross Region Restore support for PostgreSQL by using Azure Backup is now generally available](#cross-region-restore-support-for-postgresql-by-using-azure-backup-is-now-generally-available)
 
+## Cross-subscription backup support for Azure VMs (preview)
+
+Azure Backup now supports cross-subscription backup for Azure Virtual Machines (preview), which allows you to protect VMs in a different subscription by using a Recovery Services vault in the same tenant and region. This capability helps centralize backup management across subscriptions for VM workloads.
+
+For feature support and limitations, see [Support matrix for Azure VM backups](backup-support-matrix-iaas.md#supported-backup-actions).
 
 ## Backup support for Confidential VMs (preview)
 

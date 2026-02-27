@@ -29,7 +29,7 @@ The following table lists the various policy types that allows you to manage Azu
 
 ### Policy 1: Configure backup on VMs without a given tag to an existing recovery services vault in the same location
 
-This policy enables a central backup team to configure backup for Azure Virtual Machines using an existing central Recovery Services vault located in the same subscription and region as the governed VMs. You can **exclude** specific VMs from the policy scope with a designated tag.
+This policy enables a central backup team to configure backup for Azure Virtual Machines using an existing central Recovery Services vault located in the same region as the governed VMs. You can **exclude** specific VMs from the policy scope with a designated tag.
 
 
 ### Policy 2: Configure backup on VMs with a given tag to an existing recovery services vault in the same location
