@@ -103,7 +103,7 @@ You can move a Recovery Services vault and its associated resources to a differe
 7. Select **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs** option to confirm, and then select **OK**.
 
 > [!NOTE]
-> Cross-subscription backup for Azure VMs is supported (Preview). However, moving a Recovery Services vault that contains cross-subscription protected virtual machines isn't supported. Also, storage redundancy option from local redundant storage (LRS) to global redundant storage (GRS) and vice versa can't be modified during the vault move operation.
+> Cross subscription backup (RS vault and protected VMs are in different subscriptions) isn't a supported scenario. Also, storage redundancy option from local redundant storage (LRS) to global redundant storage (GRS) and vice versa can't be modified during the vault move operation.
 
 ## Use Azure portal to back up resources in Recovery Services vault after moving across regions
 
