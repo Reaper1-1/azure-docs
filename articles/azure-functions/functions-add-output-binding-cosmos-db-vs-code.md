@@ -170,9 +170,9 @@ In this code, `arg_name` identifies the binding parameter referenced in your cod
 ## Add code that uses the output binding
 
 ::: zone pivot="programming-language-csharp"  
-Replace the existing Run method with the following code:
+Replace the existing `Run` method with the following code:
 
-:::code language="csharp" source="~/functions-docs-csharp/functions-add-output-binding-cosmos-db-isolated/HttpExample.cs" range="11-34":::
+:::code language="csharp" source="~/functions-docs-csharp/functions-add-output-binding-cosmos-db-isolated/HttpExample.cs" range="17-34":::
 
 ::: zone-end  
 ::: zone pivot="programming-language-javascript"   

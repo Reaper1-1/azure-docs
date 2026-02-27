@@ -9,9 +9,9 @@ ms.custom: devdivchpfy22
 
 # [Isolated worker model](#tab/isolated-process)
 
-Replace the existing `HttpExample` class with the following code:
+Replace the existing `Run` method with the following code:
 
-:::code language="csharp" source="~/functions-docs-csharp/functions-add-output-binding-storage-queue-isolated/HttpExample.cs" range="11-32":::
+:::code language="csharp" source="~/functions-docs-csharp/functions-add-output-binding-storage-queue-isolated/HttpExample.cs" range="17-31":::
 
 # [In-process model](#tab/in-process)
 
