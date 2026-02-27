@@ -2,7 +2,7 @@
 title: Triggers and Bindings in Azure Functions
 description: Learn how to use triggers and bindings to connect your Azure function to online events and cloud-based services.
 ms.topic: concept-article
-ms.date: 10/10/2025
+ms.date: 02/26/2026
 ms.custom: devdivchpfy22, devx-track-extended-java, devx-track-js, devx-track-python, devx-track-ts
 zone_pivot_groups: programming-languages-set-functions
 ai-usage: ai-assisted
