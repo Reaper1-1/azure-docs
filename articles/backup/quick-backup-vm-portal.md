@@ -125,7 +125,7 @@ There are **Sub Tasks** running at the backend, one for front-end backup job tha
 
   ![Screenshot showing backup job status sub-tasks.](./media/backup-azure-arm-vms-prepare/backup-job-phase.png)
 
-For details on VM backup job progress phases and how to interpret the progress bar, see [VM backup job progress phases](backup-azure-arm-vms-prepare.md#vm-backup-job-progress-phases).
+For details on VM backup job phases and how to interpret the progress bar, see [Verify the backup job status](backup-azure-arm-vms-prepare.md#verify-the-backup-job-status).
 
 Depending on disk size and churn, **Transfer data to vault** can take time to complete. Use the linked article for job-status combinations, parallel backup behavior, and recovery-point guidance.
 
