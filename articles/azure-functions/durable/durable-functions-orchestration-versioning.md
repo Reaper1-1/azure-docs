@@ -9,7 +9,7 @@ ms.custom: fasttrack-edit
 #Customer intent: As a Durable Functions developer, I want to deploy breaking changes to my orchestrations without interrupting in-flight instances, so that I can maintain zero-downtime deployments.
 ---
 
-# Orchestration versioning in Durable Functions (Azure Functions) - public preview
+# Orchestration versioning in Durable Functions (Azure Functions)
 
 Orchestration versioning addresses [the core challenge](durable-functions-versioning.md) of deploying changes to orchestrator functions while maintaining the deterministic execution model that Durable Functions requires. Without this feature, breaking changes to orchestrator logic or activity function signatures would cause in-flight orchestration instances to fail during replay because they would break the [determinism requirement](durable-functions-code-constraints.md) that ensures reliable orchestration execution. This built-in feature provides automatic version isolation with minimal configuration. It's backend agnostic, so it can be used by apps leveraging any of the Durable Function's [storage providers](durable-functions-storage-providers.md), including the [Durable Task Scheduler](./durable-task-scheduler/durable-task-scheduler.md).
 
@@ -35,9 +35,6 @@ The orchestration versioning feature operates on these core principles:
 - **Backward Compatibility**: Workers running newer orchestrator versions can continue executing orchestration instances created by older orchestrator versions.
 
 - **Forward Protection**: The runtime automatically prevents workers running older orchestrator versions from executing orchestrations started by newer orchestrator versions.
-
-> [!IMPORTANT]
-> Orchestration versioning is currently in public preview.
 
 ## Prerequisites
 
